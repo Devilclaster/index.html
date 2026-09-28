@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halden Dental Studio</title>
+<meta name="description" content="Unhurried, precise dentistry in a calm studio. Book a check-up, whitening, aligners or implants online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{bg:'var(--bg)',surface:'var(--surface)',ink:'var(--ink)',muted:'var(--muted)',accent:'var(--accent)','accent-ink':'var(--accent-ink)',tint:'var(--tint)',line:'var(--line)',panel:'var(--panel)'},fontFamily:{display:['"Bricolage Grotesque"','ui-sans-serif','system-ui','sans-serif'],sans:['Figtree','ui-sans-serif','system-ui','sans-serif']}}}}
+</script>
+<style>
+:root{--bg:#F3F7F6;--surface:#FFFFFF;--ink:#10262E;--muted:#4A5F66;--accent:#1B6B62;--accent-ink:#FFFFFF;--tint:#DDEBE7;--line:#D2DEDB;--panel:#12403F;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1B1F;--surface:#142A30;--ink:#E6F0EE;--muted:#9DB4B0;--accent:#6FD1BF;--accent-ink:#0D1B1F;--tint:#1B3A3F;--line:#24444A;--panel:#0F3A3A}}
+:root[data-theme="dark"]{--bg:#0D1B1F;--surface:#142A30;--ink:#E6F0EE;--muted:#9DB4B0;--accent:#6FD1BF;--accent-ink:#0D1B1F;--tint:#1B3A3F;--line:#24444A;--panel:#0F3A3A}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 5rem)}
+body{background:var(--bg);color:var(--ink);font-family:Figtree,ui-sans-serif,system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;letter-spacing:-.02em;line-height:1.08}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.arc{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.4s cubic-bezier(.3,.7,.2,1) .2s forwards}
+.arc:nth-child(2){animation-delay:.5s}.arc:nth-child(3){animation-delay:.8s}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.arc{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}#track{transition:none!important}}
+.field{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;color:var(--ink);font:inherit}
+.field:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 30%,transparent)}
+.field[aria-invalid="true"]{border-color:#C0392B}
+</style>
+</head>
+<body>
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-ink">Skip to content</a>
+
+<header class="sticky z-40 border-b border-line bg-bg/85 backdrop-blur" style="top:env(safe-area-inset-top,0px)">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+    <a href="#top" class="font-display text-xl font-bold tracking-tight">Halden <span class="font-medium text-muted">Dental Studio</span></a>
+    <nav aria-label="Primary" class="hidden items-center gap-8 text-sm font-medium md:flex">
+      <a class="hover:text-accent" href="#services">Treatments</a>
+      <a class="hover:text-accent" href="#stories">Patient stories</a>
+      <a class="hover:text-accent" href="#book">Visit us</a>
+    </nav>
+    <a href="#book" class="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-ink transition hover:opacity-90">Book an appointment</a>
+  </div>
+</header>
+
+<main id="main">
+<!-- Hero -->
+<section id="top" class="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-14 lg:grid-cols-12 lg:pt-24">
+  <div class="lg:col-span-7">
+    <h1 class="text-5xl font-bold sm:text-6xl lg:text-7xl">Dentistry that never feels rushed.</h1>
+    <p class="mt-6 max-w-xl text-lg text-muted">Longer appointments, one dentist from start to finish, and a studio designed to lower your heart rate. Precise care for adults and children, six days a week.</p>
+    <div class="mt-9 flex flex-wrap items-center gap-4">
+      <a href="#book" class="rounded-full bg-accent px-7 py-3.5 font-semibold text-accent-ink transition hover:opacity-90">Book an appointment</a>
+      <a href="#services" class="rounded-full border border-line px-7 py-3.5 font-semibold transition hover:bg-tint">See treatments</a>
+    </div>
+    <dl class="mt-12 flex flex-wrap gap-x-12 gap-y-4 text-sm text-muted">
+      <div><dt class="sr-only">Experience</dt><dd><strong class="font-display text-2xl text-ink">18 years</strong><br>in private practice</dd></div>
+      <div><dt class="sr-only">Appointment length</dt><dd><strong class="font-display text-2xl text-ink">45 minutes</strong><br>minimum per visit</dd></div>
+      <div><dt class="sr-only">Rating</dt><dd><strong class="font-display text-2xl text-ink">4.9 of 5</strong><br>from 1,200+ reviews</dd></div>
+    </dl>
+  </div>
+
+  <div class="relative lg:col-span-5">
+    <div class="relative overflow-hidden rounded-[2rem] bg-panel p-6 text-white sm:p-8" style="min-height:26rem">
+      <svg class="absolute -right-16 -top-16 h-[30rem] w-[30rem]" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+        <circle class="arc" cx="200" cy="200" r="190" pathLength="1" stroke="#6FD1BF" stroke-opacity=".55" stroke-width="1.5"/>
+        <circle class="arc" cx="200" cy="200" r="140" pathLength="1" stroke="#6FD1BF" stroke-opacity=".4" stroke-width="1.5"/>
+        <circle class="arc" cx="200" cy="200" r="90" pathLength="1" stroke="#6FD1BF" stroke-opacity=".3" stroke-width="1.5"/>
+      </svg>
+      <div class="relative flex h-full min-h-[22rem] flex-col justify-end">
+        <div class="rounded-2xl bg-surface p-5 text-ink shadow-xl">
+          <h2 class="font-display text-lg font-bold">Next available visits</h2>
+          <p class="mt-1 text-sm text-muted">Choose a time and we'll fill in the form for you.</p>
+          <div id="slots" class="mt-4 grid grid-cols-2 gap-2" role="group" aria-label="Next available appointment times"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="border-y border-line bg-surface">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 lg:grid-cols-12 lg:py-28">
+    <div class="lg:col-span-4">
+      <div class="lg:sticky" style="top:calc(env(safe-area-inset-top,0px) + 6rem)">
+        <h2 class="text-4xl font-bold sm:text-5xl">Treatments, explained plainly.</h2>
+        <p class="mt-5 max-w-sm text-muted">Every plan starts with a conversation and a written quote. Nothing is booked until you say yes.</p>
+      </div>
+    </div>
+    <ul id="service-list" class="divide-y divide-line lg:col-span-8"></ul>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="stories" class="mx-auto max-w-6xl px-5 py-20 lg:py-28">
+  <h2 class="max-w-2xl text-4xl font-bold sm:text-5xl">What patients say after their first visit.</h2>
+  <div class="mt-12" role="region" aria-roledescription="carousel" aria-label="Patient stories">
+    <div class="overflow-hidden rounded-[2rem] bg-tint">
+      <div id="track" class="flex transition-transform duration-700 ease-out" aria-live="off"></div>
+    </div>
+    <div class="mt-6 flex items-center justify-between">
+      <div id="dots" class="flex gap-2" role="group" aria-label="Choose a story"></div>
+      <div class="flex gap-3">
+        <button id="prev" class="grid h-12 w-12 place-items-center rounded-full border border-line bg-surface transition hover:bg-tint" aria-label="Previous story"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button id="next" class="grid h-12 w-12 place-items-center rounded-full border border-line bg-surface transition hover:bg-tint" aria-label="Next story"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking -->
+<section id="book" class="border-t border-line bg-surface">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 lg:grid-cols-12 lg:py-28">
+    <div class="lg:col-span-5">
+      <h2 class="text-4xl font-bold sm:text-5xl">Book an appointment.</h2>
+      <p class="mt-5 max-w-md text-muted">Tell us what you need and when suits you. We confirm by email within one working day.</p>
+      <address class="mt-10 space-y-4 text-sm not-italic">
+        <p><strong class="block text-base">Halden Dental Studio</strong>24 Marlowe Street, Suite 2<br>Your City, 000 000</p>
+        <p><strong class="block text-base">Opening hours</strong>Monday to Friday, 8:30 to 18:00<br>Saturday, 9:00 to 14:00<br>Closed Sunday</p>
+        <p><a class="font-semibold text-accent underline underline-offset-4" href="tel:+10000000000">+1 000 000 0000</a></p>
+      </address>
+    </div>
+
+    <div class="lg:col-span-7">
+      <form id="booking" novalidate class="grid gap-5 rounded-[2rem] border border-line bg-bg p-6 sm:grid-cols-2 sm:p-9">
+        <div>
+          <label for="name" class="mb-1.5 block text-sm font-semibold">Full name</label>
+          <input id="name" name="name" class="field" autocomplete="name" required aria-describedby="name-err">
+          <p id="name-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div>
+          <label for="email" class="mb-1.5 block text-sm font-semibold">Email</label>
+          <input id="email" name="email" type="email" class="field" autocomplete="email" required aria-describedby="email-err">
+          <p id="email-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div>
+          <label for="phone" class="mb-1.5 block text-sm font-semibold">Phone <span class="font-normal text-muted">(optional)</span></label>
+          <input id="phone" name="phone" type="tel" class="field" autocomplete="tel">
+          <p class="mt-1 min-h-5"></p>
+        </div>
+        <div>
+          <label for="service" class="mb-1.5 block text-sm font-semibold">Treatment</label>
+          <select id="service" name="service" class="field" required aria-describedby="service-err"><option value="">Choose a treatment</option></select>
+          <p id="service-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div>
+          <label for="date" class="mb-1.5 block text-sm font-semibold">Preferred date</label>
+          <input id="date" name="date" type="date" class="field" required aria-describedby="date-err">
+          <p id="date-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div>
+          <label for="time" class="mb-1.5 block text-sm font-semibold">Preferred time</label>
+          <select id="time" name="time" class="field" required aria-describedby="time-err"><option value="">Choose a time</option></select>
+          <p id="time-err" class="mt-1 min-h-5 text-sm text-red-600"></p>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="notes" class="mb-1.5 block text-sm font-semibold">Anything we should know? <span class="font-normal text-muted">(optional)</span></label>
+          <textarea id="notes" name="notes" rows="3" class="field"></textarea>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="w-full rounded-full bg-accent px-7 py-4 font-semibold text-accent-ink transition hover:opacity-90 sm:w-auto">Request this appointment</button>
+        </div>
+      </form>
+      <div id="success" hidden tabindex="-1" role="status" class="rounded-[2rem] border border-line bg-tint p-8 sm:p-12">
+        <h3 class="text-3xl font-bold">Request received.</h3>
+        <p id="success-msg" class="mt-4 max-w-md text-muted"></p>
+        <button id="again" class="mt-8 rounded-full border border-line bg-surface px-6 py-3 font-semibold transition hover:opacity-90">Book another visit</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-line">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-8 text-sm text-muted">
+    <p>&copy; <span id="year"></span> Halden Dental Studio. All rights reserved.</p>
+    <p>Same-day emergency appointments are available. Call us before 11:00.</p>
+  </div>
+</footer>
+
+<script>
+/* Edit this object to re-skin the site for another business. */
+const SITE={
+  services:[
+    {name:'Check-up and clean',desc:'A full exam, digital X-rays if needed, and a polish that leaves your teeth feeling new.',time:'45 min',price:'From $95'},
+    {name:'Teeth whitening',desc:'Supervised whitening in one visit, with a take-home kit to keep the shade.',time:'60 min',price:'$290'},
+    {name:'Clear aligners',desc:'A 3D scan, a preview of your finished smile, and a plan with a fixed price.',time:'30 min consult',price:'Free consult'},
+    {name:'Dental implants',desc:'A permanent replacement for a missing tooth, planned with 3D imaging and placed under local anaesthetic.',time:'90 min',price:'From $1,900'},
+    {name:'Porcelain veneers',desc:'Thin, hand-finished shells that fix chips, gaps and stains. Fully reversible design available.',time:'75 min',price:'$850 per tooth'},
+    {name:'Emergency visit',desc:'Toothache, a broken tooth or a lost filling. We see you the same day.',time:'30 min',price:'$120'}
+  ],
+  reviews:[
+    {q:'I had put off a dentist visit for six years. Nobody made me feel bad about it, and the whole plan fit on one page. I left without a knot in my stomach.',n:'Amelia R.',d:'Check-up and clean'},
+    {q:'My aligners finished two weeks early and the price never changed from the first quote. The scan preview made the decision easy.',n:'Daniel K.',d:'Clear aligners'},
+    {q:'I came in with a cracked tooth on a Friday morning and left at lunch with it fixed. Calm, quick and very kind.',n:'Priya S.',d:'Emergency visit'},
+    {q:'My son used to dread the dentist. He now asks when we are going back, which says everything.',n:'Marcus T.',d:'Family check-up'}
+  ],
+  times:['08:30','09:15','10:00','10:45','11:30','13:00','13:45','14:30','15:15','16:00','16:45','17:30']
+};
+const $=s=>document.querySelector(s);
+const fmtDay=d=>d.toLocaleDateString('en-US',{weekday:'short',day:'numeric',month:'short'});
+const iso=d=>{const z=new Date(d.getTime()-d.getTimezoneOffset()*6e4);return z.toISOString().slice(0,10)};
+
+$('#year').textContent=new Date().getFullYear();
+
+/* Services */
+$('#service-list').innerHTML=SITE.services.map(s=>`
+  <li class="grid gap-2 py-7 first:pt-0 sm:grid-cols-12 sm:gap-6">
+    <h3 class="text-2xl font-bold sm:col-span-4">${s.name}</h3>
+    <p class="text-muted sm:col-span-5">${s.desc}</p>
+    <p class="text-sm sm:col-span-3 sm:text-right"><span class="block font-semibold">${s.price}</span><span class="text-muted">${s.time}</span></p>
+  </li>`).join('');
+$('#service').insertAdjacentHTML('beforeend',SITE.services.map(s=>`<option>${s.name}</option>`).join(''));
+$('#time').insertAdjacentHTML('beforeend',SITE.times.map(t=>`<option>${t}</option>`).join(''));
+
+/* Date limits and hero slots */
+const today=new Date();$('#date').min=iso(today);
+const days=[];for(let i=1;days.length<4;i++){const d=new Date(today);d.setDate(today.getDate()+i);if(d.getDay()!==0)days.push(d)}
+const picks=[['09:15',0],['14:30',1],['10:45',2],['16:00',3]];
+$('#slots').innerHTML=picks.map(([t,i])=>`<button type="button" data-d="${iso(days[i])}" data-t="${t}" class="rounded-xl border border-line px-3 py-2.5 text-left text-sm transition hover:border-accent hover:bg-tint"><span class="block font-semibold">${fmtDay(days[i])}</span><span class="text-muted">${t}</span></button>`).join('');
+$('#slots').addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  $('#date').value=b.dataset.d;$('#time').value=b.dataset.t;
+  clearErr('date');clearErr('time');
+  $('#book').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+  setTimeout(()=>$('#name').focus({preventScroll:true}),450);
+});
+
+/* Testimonial slider */
+const track=$('#track'),dots=$('#dots'),N=SITE.reviews.length;let cur=0,timer;
+track.innerHTML=SITE.reviews.map((r,i)=>`
+  <figure class="min-w-full p-8 sm:p-14" role="group" aria-roledescription="slide" aria-label="${i+1} of ${N}">
+    <blockquote class="font-display text-2xl font-medium leading-snug sm:text-4xl" style="max-width:34ch">${r.q}</blockquote>
+    <figcaption class="mt-8 text-sm"><strong class="text-base">${r.n}</strong><br><span class="text-muted">${r.d}</span></figcaption>
+  </figure>`).join('');
+dots.innerHTML=SITE.reviews.map((_,i)=>`<button class="h-3 w-3 rounded-full bg-line transition-all aria-[current=true]:w-8 aria-[current=true]:bg-accent" aria-label="Show story ${i+1}"></button>`).join('');
+const dotEls=[...dots.children];
+function go(n,user){
+  cur=(n+N)%N;track.style.transform=`translateX(-${cur*100}%)`;
+  [...track.children].forEach((s,i)=>s.setAttribute('aria-hidden',i!==cur));
+  dotEls.forEach((d,i)=>d.setAttribute('aria-current',i===cur));
+  if(user)track.setAttribute('aria-live','polite');
+}
+dotEls.forEach((d,i)=>d.addEventListener('click',()=>go(i,true)));
+$('#prev').addEventListener('click',()=>go(cur-1,true));
+$('#next').addEventListener('click',()=>go(cur+1,true));
+const region=track.closest('[role=region]');
+const start=()=>{stop();if(!matchMedia('(prefers-reduced-motion:reduce)').matches)timer=setInterval(()=>go(cur+1),7000)};
+const stop=()=>clearInterval(timer);
+['mouseenter','focusin'].forEach(ev=>region.addEventListener(ev,stop));
+['mouseleave','focusout'].forEach(ev=>region.addEventListener(ev,start));
+let x0=null;
+track.addEventListener('pointerdown',e=>x0=e.clientX);
+track.addEventListener('pointerup',e=>{if(x0!==null&&Math.abs(e.clientX-x0)>50)go(cur+(e.clientX<x0?1:-1),true);x0=null});
+go(0);start();
+
+/* Booking form */
+const form=$('#booking');
+const setErr=(id,msg)=>{$('#'+id+'-err').textContent=msg;$('#'+id).setAttribute('aria-invalid','true')};
+function clearErr(id){const e=$('#'+id+'-err');if(e)e.textContent='';$('#'+id).removeAttribute('aria-invalid')}
+form.addEventListener('input',e=>e.target.id&&clearErr(e.target.id));
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  ['name','email','service','date','time'].forEach(clearErr);
+  const v=Object.fromEntries(new FormData(form));const errs={};
+  if(v.name.trim().length<2)errs.name='Enter your full name.';
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email))errs.email='Enter an email address like name@example.com.';
+  if(!v.service)errs.service='Choose a treatment.';
+  if(!v.date)errs.date='Choose a date.';
+  else{const d=new Date(v.date+'T12:00');
+    if(iso(d)<iso(today))errs.date='Choose today or a later date.';
+    else if(d.getDay()===0)errs.date='We are closed on Sundays. Choose Monday to Saturday.'}
+  if(!v.time)errs.time='Choose a time.';
+  const keys=Object.keys(errs);
+  if(keys.length){keys.forEach(k=>setErr(k,errs[k]));$('#'+keys[0]).focus();return}
+  /* Replace this block with a fetch() to your booking endpoint. */
+  $('#success-msg').textContent=`Thank you, ${v.name.trim().split(' ')[0]}. We have your request for ${v.service.toLowerCase()} on ${fmtDay(new Date(v.date+'T12:00'))} at ${v.time}. A confirmation will arrive at ${v.email} within one working day.`;
+  form.hidden=true;$('#success').hidden=false;$('#success').focus();
+});
+$('#again').addEventListener('click',()=>{form.reset();$('#success').hidden=true;form.hidden=false;$('#name').focus()});
+</script>
+</body>
+</html>
